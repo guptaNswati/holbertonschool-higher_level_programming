@@ -19,3 +19,13 @@
 8-concat_edges.py - complete a given source code for creating a new sentence.
 
 9-easter_egg.py - a Python script that prints "The Zen of Python", by TimPeters.
+
+100-write.py - Writes a Python script that prints a string literal using write
+	     on stderr.
+
+101-compile - a Shell script that compiles a Python script file.
+
+102-magic_calculation.py - Writes a Python function that is similar to given
+			 Python bytecode.
+
+main.py - a python script that prints a string literal for testing.
