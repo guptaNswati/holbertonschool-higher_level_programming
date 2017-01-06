@@ -5,7 +5,8 @@ import hidden_4
 def discovr():
     name = dir(hidden_4)
     for i in name:
-        print("{:s}".format(i))
+        if i[:2] != '__':
+            print("{:s}".format(i))
 
 
 if __name__ == "__main__":
