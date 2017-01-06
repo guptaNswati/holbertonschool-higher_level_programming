@@ -5,7 +5,10 @@ def print_arg(argv):
         print("{:d} arguement.".format(n))
         return
     else:
-        print("{:d} arguements:".format(n))
+        if n == 1:
+            print("{:d} arguement:".format(n))
+        else:
+            print("{:d} arguements:".format(n))
         i = 1
         while i <= n:
             print("{:d}: {:s}".format(i, argv[i]))
