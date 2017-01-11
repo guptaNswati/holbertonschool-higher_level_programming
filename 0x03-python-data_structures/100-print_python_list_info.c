@@ -1,10 +1,7 @@
-#include <Python.h>
 #include <stdio.h>
+#include <Python.h>
 
 void print_python_list_info(PyObject *p)
 {
-	const char *s;
-
-	PyArg_ParseTuple(p, "", &s);
-/*	printf("[p->size] %p", (void *)p->ob_refcnt); */
+	printf("[p->size] %d", Py_SIZE(p));
 }
