@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 def weight_average(my_list=[]):
-    sum = 0
+    sum_x = 0
+    sum_w = 0
     if my_list:
         for i in my_list:
-            sum += float("{}.{}".format(i[0], ''
-                                        .join(str(n) for n in str(i[1]))))
-        sum = sum / len(my_list)
-    return sum
+            sum_x += i[0] * i[1]
+            sum_w += i[1]
+        sum_x = sum_x / sum_w
+    return sum_x
