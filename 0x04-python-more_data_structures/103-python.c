@@ -46,12 +46,11 @@ void print_python_list(PyObject *p)
 	{
 		printf("[*] Python list info\n");
 		/* ref: http://effbot.org/zone/python-capi-sequences.htm */
-		printf("[*] Size of the Python List = %lu\n",
-		       PySequence_Size(p));
+		printf("[*] Size of the Python List = %lu\n", PyList_Size(p));
 		printf("[*] Allocated = %lu\n", ((PyListObject *)p)->allocated);
 		for (i = 0; i < PyList_Size(p); i++)
 		{
-			in_list = PySequence_Fast_GET_ITEM(p, i);
+			in_list = PyList_GET_ITEM(p, i);
 			printf("Element %lu: %s\n", i,
 			       in_list->ob_type->tp_name);
 			if (strcmp(in_list->ob_type->tp_name, "bytes") == 0)
