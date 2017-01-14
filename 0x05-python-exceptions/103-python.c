@@ -17,8 +17,9 @@ void print_python_bytes(PyObject *p)
 		printf("  [ERROR] Invalid Bytes Object\n");
 	else
 	{
-		PyBytes_AsStringAndSize(p, &s, &len);
+		len = ((PyVarObject *)p)->ob_size;
 		printf("  size: %lu\n", len);
+		s = ((PyBytesObject *)p)->ob_sval;
 		printf("  trying string: %s\n", s);
 		if (len > 10)
 			len = 10;
@@ -37,9 +38,7 @@ void print_python_float(PyObject *p)
 	if (!PyFloat_Check(p))
 		printf("  [ERROR] Invalid Float Object\n");
 	else
-	{
 		printf("  value: %f\n", ((PyFloatObject *)p)->ob_fval);
-	}
 }
 
 /**
