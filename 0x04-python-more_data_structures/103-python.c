@@ -50,7 +50,7 @@ void print_python_list(PyObject *p)
 		printf("[*] Allocated = %lu\n", ((PyListObject *)p)->allocated);
 		for (i = 0; i < PyList_Size(p); i++)
 		{
-			in_list = PySequence_Get_Item(p, i);
+			in_list = PySequence_GetItem(p, i);
 			printf("Element %lu: %s\n", i,
 			       in_list->ob_type->tp_name);
 			if (strcmp(in_list->ob_type->tp_name, "bytes") == 0)
