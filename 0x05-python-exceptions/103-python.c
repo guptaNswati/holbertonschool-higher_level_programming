@@ -69,7 +69,7 @@ void print_python_list(PyObject *p)
 				print_python_bytes(in_list);
 			else if (strcmp(in_list->ob_type->tp_name,
 					"float") == 0)
-				 print_python_float(in_list);
+				print_python_float(in_list);
 		}
 	}
 }
