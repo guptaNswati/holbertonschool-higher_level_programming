@@ -13,7 +13,7 @@ void print_python_bytes(PyObject *p)
 	Py_ssize_t len, i;
 
 	printf("[.] bytes object info\n");
-	if (!PyBytes_Check(p))
+	if (p->ob_type != &PyBytes_Type)
 		printf("  [ERROR] Invalid Bytes Object\n");
 	else
 	{
@@ -35,7 +35,7 @@ void print_python_bytes(PyObject *p)
 void print_python_float(PyObject *p)
 {
 	printf("[.] float object info\n");
-	if (!PyFloat_Check(p))
+	if (p->ob_type != &PyFloat_Type)
 		printf("  [ERROR] Invalid Float Object\n");
 	else
 		printf("  value: %f\n", ((PyFloatObject *)p)->ob_fval);
@@ -52,7 +52,7 @@ void print_python_list(PyObject *p)
 	PyObject *in_list;
 
 	printf("[*] Python list info\n");
-	if (!PyList_Check(p))
+	if (p->ob_type != &PyList_Type)
 		printf("  [ERROR] Invalid List Object\n");
 	else
 	{
