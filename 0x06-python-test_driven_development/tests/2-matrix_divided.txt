@@ -1,51 +1,41 @@
-The ``Multiplication`` module
+The ``2-matrix_divided`` module
 =============================
 
-Using ``mul``
+Using ``matrix_divided``
 -------------
 
 This is an example text file in reStructuredText format. First import
-``mul`` from the ``Multiplication`` module:
+``matrix_divided`` from the ``2-matrix_divided`` module:
 
-     >>> mul = __import__('1-mul').mul
+     >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 
 Now use it:
 
-    >>> mul(4, 5)
-    20
+    >>> matrix_divided([[1, 2, 3], [4, 5, 6]], 3)
+    [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
 
-    >>> mul(2, "")
-    ''
+    >>> matrix_divided([[], []], 4.1)
+    [[], []]
 
-    >>> mul(-2, -3)
+    >>> matrix_divided(-2, -3)
     6
 
-    >>> mul(-2, 3)
-    6
-
-    >>> mul(100.3, -2)
-    -200.6
-
-    >>> mul(2, "School")
-    SchoolSchool
-
-    >>> mul("holbertn", 2)
-    holbertnholbertn
-
-    >>> mul(2, '*')
-    '**'
-
-    >>> mul("holb", 2.3)
+    >>> matrix_divided([[1], [1]], 0)
     Trackback (most recent call last):
     doctest.IGNORE_EXCEPTION_DETAIL
-    TypeError: can't multiply sequence by non-int of type 'float'
+    TypeError:
 
-    >>> mul("Holberton", "School")
+    >>> matrix_divided([[], []], "2.3")
+    Trackback (most recent call last):
+    doctest.IGNORE_EXCEPTION_DETAIL
+    TypeError: divisor must be an integer or float
+
+    >>> matrix_divided("Holberton", "School")
     Traceback (most recent call last):
     doctest.IGNORE_EXCEPTION_DETAIL
     TypeError: can't multiply sequence by non-int of type 'str'
 
-    >>> mul([1, 2, 3], 2)
+    >>> matrix_divided([1, 2, 3], 2)
     [1, 2, 3, 1, 2, 3]
 
     >>> mul("hello, 1, 2", 2)

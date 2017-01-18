@@ -14,22 +14,22 @@ Now use it:
     >>> add_integer(2, 3)
     5
 
-    >>> add_integer(100.3, ("whats up", 007))
+    >>> add_integer(100.3, ("whats up", 7))
     Traceback (most recent call last):
-    	...
+    doctest.IGNORE_EXCEPTION_DETAIL
     TypeError: b must be an integer
 
     >>> add_integer(100.3, -2)
     98
 
-    >>> add_integer(100.3, "School")
+    >>> add_integer("school", 100.3)
     Traceback (most recent call last):
-        ...
-    Typeerror: b must be an integer
+    doctest.IGNORE_EXCEPTION_DETAIL
+    TypeError: a must be an integer
 
     >>> add_integer("Holberton", "School")
     Traceback (most recent call last):
-        ...
+    doctest.IGNORE_EXCEPTION_DETAIL
     TypeError: a and b must be integers
 
     >>> add_integer(100.3, 100.3)
@@ -37,5 +37,5 @@ Now use it:
 
     >>> add_integer(None, "School")
     Traceback (most recent call last):
-        ...
+    doctest.IGNORE_EXCEPTION_DETAIL
     TypeError: a and b must be integers
