@@ -7,81 +7,78 @@ Using ``mul``
 This is an example text file in reStructuredText format. First import
 ``mul`` from the ``Multiplication`` module:
 
-     >>> mul = __import__('1-mul').mul
+>>> mul = __import__('1-mul').mul
 
 Now use it:
 
-    >>> mul(4, 5)
-    20
+>>> mul(4, 5)
+20
 
-    >>> mul(2, "")
-    ''
+>>> mul(2, "")
+''
 
-    >>> mul(True, -1)
-    -1
+>>> mul(True, -1)
+-1
 
-    >>> mul(True, 5)
-    5
+>>> mul(True, 5)
+5
 
-    >>> mul(False, -1)
-    0
+>>> mul(False, -1)
+0
 
-    >>> mul(False, 2)
-    0
+>>> mul(False, 2)
+0
 
-    >>> mul(-2, -3)
-    6
+>>> mul(-2, -3)
+6
 
-    >>> mul(-2, 3)
-    6
+>>> mul(-2, 100.3)
+-200.6
 
-    >>> mul(100.3, -2)
-    -200.6
+>>> mul(2, "School")
+'SchoolSchool'
 
-    >>> mul(2, "School")
-    SchoolSchool
+>>> mul("holbertn", 2)
+'holbertnholbertn'
 
-    >>> mul("holbertn", 2)
-    holbertnholbertn
+>>> mul(2, '*')
+'**'
 
-    >>> mul(2, '*')
-    '**'
+>>> mul([1, 2, 3], 2)
+[1, 2, 3, 1, 2, 3]
 
-    >>> mul("holb", 2.3)
-    Trackback (most recent call last):
-    doctest.IGNORE_EXCEPTION_DETAIL
-    TypeError: can't multiply sequence by non-int of type 'float'
+>>> mul("hello, 1, 2", 2)
+'hello, 1, 2hello, 1, 2'
 
-    >>> mul("Holberton", "School")
-    Traceback (most recent call last):
-    doctest.IGNORE_EXCEPTION_DETAIL
-    TypeError: can't multiply sequence by non-int of type 'str'
+>>> mul((1, 2), 2)
+(1, 2, 1, 2)
 
-    >>> mul([1, 2, 3], 2)
-    [1, 2, 3, 1, 2, 3]
+>>> mul("Holberton", "School")
+Traceback (most recent call last):
+...
+TypeError: can't multiply sequence by non-int of type 'str'
 
-    >>> mul("hello, 1, 2", 2)
-    'hello, 1, 2hello, 1, 2'
+>>> mul([1, 2, 3, 1, 2, 3], [1, 2, 3])
+Traceback (most recent call last):
+...
+TypeError: can't multiply sequence by non-int of type 'list'
 
-    >>> mul((1, 2), 2)
-    (1, 2, 1, 2)
+>>> mul([1, 2, 3, 1, 2, 3], [1, 2, 3])
+Traceback (most recent call last):
+...
+TypeError: can't multiply sequence by non-int of type 'list'
 
-    >>> mul([1, 2, 3, 1, 2, 3], [1, 2, 3])
-    Traceback (most recent call last):
-    doctest.IGNORE_EXCEPTION_DETAIL
-    TypeError: can't multiply sequence by non-int of type 'list'
+>>> mul({5: "Holbrtn"}, 4)
+Traceback (most recent call last):
+...
+TypeError: unsupported operand type(s) for *: 'dict' and 'int'
 
-    >>> mul(None, 1)
-    Traceback (most recent call last):
-    doctest.IGNORE_EXCEPTION_DETAIL
-    TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+>>> mul(2, {1, 2, 3})
+Traceback (most recent call last):
+...
+TypeError: unsupported operand type(s) for *: 'int' and 'set'
 
-    >>> mul({5: "Holbrtn"}, 4)
-    Traceback (most recent call last):
-    doctest.IGNORE_EXCEPTION_DETAIL
-    TypeError: unsupported operand type(s) for *: 'dict' and 'int'
-
-    >>> mul(2, {1, 2, 3})
-    Traceback (most recent call last):
-    doctest.IGNORE_EXCEPTION_DETAIL
-    TypeError: unsupported operand type(s) for *: 'int' and 'set'
+>>> mul("holb", 2.30)
+Traceback (most recent call last):
+...
+TypeError: can't multiply sequence by non-int of type 'float'

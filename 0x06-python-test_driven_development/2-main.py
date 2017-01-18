@@ -5,7 +5,7 @@ matrix = [
     [],
     []
 ]
-print(matrix_divided(-3, -2))
+print(matrix_divided([[-3]], -2))
 print(matrix_divided("h", 3))
 print(matrix_divided("s", "h"))
 print(matrix_divided([1, 2, 3], 2))

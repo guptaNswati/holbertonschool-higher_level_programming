@@ -17,7 +17,3 @@ def text_indentation(text):
             print("{:s}".format(i), end="")
         else:
             print("{:s}\n".format(i))
-
-
-if __name__ == '__main__':
-    doctest.testfile('/5-text_indentation.txt')
