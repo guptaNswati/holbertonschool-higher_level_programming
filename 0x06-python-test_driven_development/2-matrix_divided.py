@@ -27,3 +27,7 @@ def matrix_divided(matrix, div):
             m_row.append(round(j/div, 2))
         n_matrx.append(m_row)
     return n_matrx
+
+
+if __name__ == '__main__':
+    doctest.testfile('/2-matrix_divided.txt')

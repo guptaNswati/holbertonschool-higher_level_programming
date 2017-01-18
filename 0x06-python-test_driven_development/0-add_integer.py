@@ -23,3 +23,7 @@ def add_integer(a, b):
             isinstance(a, float) and (b, float)):
         raise TypeError("a and b must be an integers or floats")
     return (a + b)
+
+
+if __name__ == '__main__':
+    doctest.testfile('/0-add_integer.txt')
