@@ -20,7 +20,3 @@ def add_integer(a, b):
     if not (isinstance(b, int) or isinstance(b, float)):
         raise TypeError("b must be an integer")
     return (a + b)
-
-
-if __name__ == '__main__':
-    doctest.testfile('/0-add_integer.txt')
