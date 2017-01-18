@@ -1,20 +1,15 @@
 #!/usr/bin/python3
 """
-This is the TetxIndentation module.
+This is the "text_indentation" module.
 
-The TextIndentation module provides a simple function text_indentation()
+The "text-indentation" module provides a simple function text_indentation()
 that prints a text with 2 new lines after each characters: ., ? and :.
-For example,
->>> text_indentation("Hello.Holbertob?I mean: Holberton")
-Hello.$
-$
-Holbertob?$
-$
-I mean:$
-$
-Holberton
 """
+
+
 def text_indentation(text):
+    """Print a text with 2 new lines after each characters: ., ? and :.
+    """
     if not isinstance(text, str):
         raise TypeError("text must be a string")
     for i in line:

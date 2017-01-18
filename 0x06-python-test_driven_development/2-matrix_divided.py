@@ -1,18 +1,14 @@
 #!/usr/bin/python3
 """
-This is the "Divide Matrix" module.
+This is the "matrix_divided" module.
 
-The Divide Matrix module supplies a simple function that divides all elements
+The matrix_divided module supplies a simple function that divides all elements
 of a matrix.
 """
 
 
 def matrix_divided(matrix, div):
-    """Divide elements of matrix and return new matrix.
-
-    >>> [matrix_divided([[1, 2, 3], [4, 5, 7]], 3)]
-    [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
-
+    """Divide elements of matri and return new matrix.
     """
     if div == 0:
         raise ZeroDivisionError("division by zero")

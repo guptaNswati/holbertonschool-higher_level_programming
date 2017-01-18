@@ -1,11 +1,8 @@
 #!/usr/bin/python3
 """
-This is the Print Name module.
+This is the "say_my_name" module.
 
-The PrintName module supplies a simple function that prints a string literal.
-For example,
->>> say_my_name("Holberton", "School"
-My name is Holberton School
+The say_my_name module supplies a simple function that prints a string literal.
 """
 
 

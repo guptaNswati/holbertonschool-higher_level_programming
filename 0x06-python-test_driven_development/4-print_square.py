@@ -1,15 +1,9 @@
 #!/usr/bin/python3
 """
-This is the Print#Square module.
+This is the print_square module.
 
-The Print#Square module provides a simple function print_square()
-that prints a square with the character #
-For example,
->>> print_square(4)
-####
-####
-####
-####
+The print_square module provides a simple function print_square()
+that prints a square with the character #.
 """
 
 
