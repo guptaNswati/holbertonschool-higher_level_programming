@@ -14,6 +14,9 @@ def matrix_divided(matrix, div):
         raise ZeroDivisionError("division by zero")
     if not isinstance(div, int) or isinstance(div, float):
         raise TypeError("divisor must be an integer or float")
+    if not matrix:
+        raise TypeError("matrix must be a matrix \
+        (array of arrays of integers/floats)")
     row_len = len(matrix[0])
     n_matrx = []
     for i in matrix:

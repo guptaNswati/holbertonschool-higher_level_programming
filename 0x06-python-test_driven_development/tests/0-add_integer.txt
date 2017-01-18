@@ -16,26 +16,38 @@ Now use it:
 
     >>> add_integer(100.3, ("whats up", 7))
     Traceback (most recent call last):
-    doctest.IGNORE_EXCEPTION_DETAIL
+    ...
     TypeError: b must be an integer
 
     >>> add_integer(100.3, -2)
     98
 
+    >>> add_integer(-True, False)
+    -1
+
+    >>> add_integer(-True, -False)
+    -1
+
+    >>> add_integer(True, False)
+    1
+
+    >>> add_integer(True, -False)
+    1
+
     >>> add_integer("school", 100.3)
     Traceback (most recent call last):
-    doctest.IGNORE_EXCEPTION_DETAIL
+    ...
     TypeError: a must be an integer
 
     >>> add_integer("Holberton", "School")
     Traceback (most recent call last):
-    doctest.IGNORE_EXCEPTION_DETAIL
-    TypeError: a and b must be integers
+    ...
+    TypeError: a must be integer
 
     >>> add_integer(100.3, 100.3)
     200
 
     >>> add_integer(None, "School")
     Traceback (most recent call last):
-    doctest.IGNORE_EXCEPTION_DETAIL
-    TypeError: a and b must be integers
+    ...
+    TypeError: a must be integer

@@ -15,17 +15,19 @@ Now use it:
     [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
 
     >>> matrix_divided([[], []], 4.1)
-    [[], []]
+    Trackback (most recent call last):
+    doctest.IGNORE_EXCEPTION_DETAIL
+    TypeError: matrix must be a matrix \ (array of arrays of integers/floats)
 
-    >>> matrix_divided(-2, -3)
-    6
+    >>> matrix_divided([-2], -3)
+    0.66
 
     >>> matrix_divided([[1], [1]], 0)
     Trackback (most recent call last):
     doctest.IGNORE_EXCEPTION_DETAIL
-    TypeError:
+    ZeroDivisionError: division by zero
 
-    >>> matrix_divided([[], []], "2.3")
+    >>> matrix_divided([[1], [1]], "2.3")
     Trackback (most recent call last):
     doctest.IGNORE_EXCEPTION_DETAIL
     TypeError: divisor must be an integer or float
@@ -33,33 +35,32 @@ Now use it:
     >>> matrix_divided("Holberton", "School")
     Traceback (most recent call last):
     doctest.IGNORE_EXCEPTION_DETAIL
-    TypeError: can't multiply sequence by non-int of type 'str'
+    TypeError: matrix must be a matrix \ (array of arrays of integers/floats)
 
     >>> matrix_divided([1, 2, 3], 2)
-    [1, 2, 3, 1, 2, 3]
+    [0.5, 1, 1.5]
 
-    >>> mul("hello, 1, 2", 2)
-    'hello, 1, 2hello, 1, 2'
-
-    >>> mul((1, 2), 2)
-    (1, 2, 1, 2)
-
-    >>> mul([1, 2, 3, 1, 2, 3], [1, 2, 3])
+    >>> matrix_divided("hello, 1, 2", 2)
     Traceback (most recent call last):
     doctest.IGNORE_EXCEPTION_DETAIL
-    TypeError: can't multiply sequence by non-int of type 'list'
+    TypeError: matrix must be a matrix \ (array of arrays of integers/floats)
 
-    >>> mul(None, 1)
+    >>> matrix_divided([1, 2, 3, 1, 2, 3], [1, 2, 3])
     Traceback (most recent call last):
     doctest.IGNORE_EXCEPTION_DETAIL
-    TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+    TypeError: divisor must be an integer or float
 
-    >>> mul({5: "Holbrtn"}, 4)
+    >>> matrix_divided(None, 1)
     Traceback (most recent call last):
     doctest.IGNORE_EXCEPTION_DETAIL
-    TypeError: unsupported operand type(s) for *: 'dict' and 'int'
+    TypeError: matrix must be a matrix \ (array of arrays of integers/floats)
 
-    >>> mul(2, {1, 2, 3})
+    >>> matrix_divided({5: "Holbrtn"}, 4)
     Traceback (most recent call last):
     doctest.IGNORE_EXCEPTION_DETAIL
-    TypeError: unsupported operand type(s) for *: 'int' and 'set'
+    TypeError: matrix must be a matrix \ (array of arrays of integers/floats)
+
+    >>> matrix_divided(2, {1, 2, 3})
+    Traceback (most recent call last):
+    doctest.IGNORE_EXCEPTION_DETAIL
+    TypeError: divisor must be an integer or float
