@@ -12,8 +12,19 @@ def text_indentation(text):
     """
     if not isinstance(text, str):
         raise TypeError("text must be a string")
-    for i in line:
-        if not (i == '.' or i == '?' or i == ':'):
+    text = text.strip()
+    spc = 0
+    for i in text:
+        if i == '.' or i == '?' or i == ':':
             print("{:s}".format(i), end="")
+            print()
+            print()
+            spc = 1
         else:
-            print("{:s}\n".format(i))
+            if not spc:
+                print("{:s}".format(i), end="")
+            else:
+                if i == ' ' or i == '\t':
+                    continue
+                print("{:s}".format(i), end="")
+                spc = 0

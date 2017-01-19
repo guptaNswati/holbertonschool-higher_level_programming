@@ -1,0 +1,69 @@
+The ``5-test_indentation`` module
+=================================
+
+This is a text file in reStructuredText format to test the above module.
+
+Using ``text_indentation``
+------------------------
+
+First import ``text_indentation`` from the ``5-text_indentation`` module:
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Now use it:
+
+>>> text_indentation("What? Pants are: blue. Purple.")
+What?
+<BLANKLINE>
+Pants are:
+<BLANKLINE>
+blue.
+<BLANKLINE>
+Purple.
+<BLANKLINE>
+
+>>> text_indentation(".?\nWaffles:\n?")
+.
+<BLANKLINE>
+?
+<BLANKLINE>
+<BLANKLINE>
+Waffles:
+<BLANKLINE>
+<BLANKLINE>
+?
+<BLANKLINE>
+
+>>> text_indentation("Howdy, Yall!")
+Howdy, Yall!
+
+>>> text_indentation(" SpaceFirst")
+SpaceFirst
+
+>>> text_indentation("  .  ?	:	")
+.
+<BLANKLINE>
+?
+<BLANKLINE>
+:
+<BLANKLINE>
+
+>>> text_indentation("	MY SPOON IS TOO BIG!...	I am a banana.\n	blearg	")
+MY SPOON IS TOO BIG!.
+<BLANKLINE>
+.
+<BLANKLINE>
+.
+<BLANKLINE>
+I am a banana.
+<BLANKLINE>
+<BLANKLINE>
+	blearg
+
+>>> text_indentation(":?.")    #doctest: +REPORT_NDIFF
+:
+<BLANKLINE>
+?
+<BLANKLINE>
+.
+<BLANKLINE>
