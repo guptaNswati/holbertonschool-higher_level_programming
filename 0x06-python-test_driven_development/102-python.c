@@ -23,8 +23,11 @@ void print_python_string(PyObject *p)
 		if (((PyASCIIObject *)p)->state.ascii)
 			printf("  value: %s\n", (char *)(void *)
 			       ((PyASCIIObject *)p + 1));
-		else
+		else if (((PyASCIIObject *)p)->state.compact)
 			printf("  value: %s\n", (char *)(void *)
 			       ((PyCompactUnicodeObject *)p + 1));
+		else
+			printf("  value: %s\n", (char *)(void *)
+			       ((PyUnicodeObject *)p)->data.any);
 	}
 }
