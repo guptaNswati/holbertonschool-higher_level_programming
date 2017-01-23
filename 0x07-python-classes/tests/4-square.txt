@@ -1,0 +1,26 @@
+The ``square`` module
+============================
+
+Using ``square``
+---------------------
+
+This is an example text file in reStructuredText format. First import
+``4-square`` from the ``4-square`` module:
+
+>>> Square = __import__('4-square').Square
+
+Now use it:
+
+>>> my_square = Square(89)
+>>> print("Area: {} for size: {}".format(my_square.area(), my_square.size))
+Area: 7921 for size: 89
+
+>>> my_square.size = 3
+>>> print("Area: {} for size: {}".format(my_square.area(), my_square.size))
+Area: 9 for size: 3
+
+>>> my_square.size = "5 feet"
+>>> print("Area: {} for size: {}".format(my_square.area(), my_square.size))
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
