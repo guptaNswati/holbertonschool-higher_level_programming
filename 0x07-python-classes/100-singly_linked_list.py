@@ -36,7 +36,7 @@ class Node:
         elif isinstance(value, Node):
             self.__next_node = value
         else:
-            raise TypeError("next must be a Node object")
+            raise TypeError("next_node must be a Node object")
 
 """
 This is a SinglyLinkedList class.
@@ -65,7 +65,7 @@ class SinglyLinkedList:
                 self.__head.next_node = newNode
             elif self.__head.data >= value:
                 newNode.next_node = self.__head
-                self.__head = new
+                self.__head = newNode
         else:
             tmp = self.__head
             while tmp.next_node:
@@ -85,13 +85,13 @@ class SinglyLinkedList:
     Print list.
     """
     def __str__(self):
+        out = ""
         if self.__head is not None:
             tmp = self.__head
-            out = "" + str(tmp.data) + "\n"
-            while tmp.next_node:
-                tmp = tmp.next_node
-                if tmp.next_node:
+            while tmp:
+                if tmp.next_node is not None:
                     out += str(tmp.data) + "\n"
                 else:
                     out += str(tmp.data)
-            return out
+                tmp = tmp.next_node
+        return out
