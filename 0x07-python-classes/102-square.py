@@ -19,7 +19,7 @@ class Square:
 
     @size.setter
     def size(self, value):
-        if not (isinstance(value, int) or isinstance(value, float)):
+        if not (type(value) == int or type(value) == float):
             raise TypeError("size must be a number")
         elif value < 0:
             raise ValueError("size must be >= 0")
@@ -36,19 +36,19 @@ class Square:
     Compare Square objects
     """
     def __lt__(self, other):
-        return (self.size < other.size)
+        return (self.area() < other.area())
 
     def __le__(self, other):
-        return (self.size <= other.size)
+        return (self.area() <= other.area())
 
     def __eq__(self, other):
-        return (self.size == other.size)
+        return (self.area() == other.area())
 
     def __ne__(self, other):
-        return (self.size != other.size)
+        return (self.area() != other.area())
 
     def __gt__(self, other):
-        return (self.size > other.size)
+        return (self.area() > other.area())
 
     def __ge__(self, other):
-        return (self.size >= other.size)
+        return (self.area() >= other.area())

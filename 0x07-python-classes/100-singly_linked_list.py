@@ -1,5 +1,15 @@
 #!/usr/bin/python3
+"""
+This is a Node class.
+
+This Node class creates a Node object.
+"""
+
+
 class Node:
+    """
+    Initialize Node object.
+    """
     def __init__(self, data, next_node=None):
         self.data = data
         self.next_node = next_node
@@ -10,7 +20,7 @@ class Node:
 
     @data.setter
     def data(self, value):
-        if not isinstance(value, int):
+        if type(value) is not int:
             raise TypeError("data must be an integer")
         else:
             self.__data = value
@@ -28,11 +38,24 @@ class Node:
         else:
             raise TypeError("next must be a Node object")
 
+"""
+This is a SinglyLinkedList class.
+
+This SinglyLinkedList class creates a linkedlist of Node objects in a soretd
+order and prints it.
+"""
+
 
 class SinglyLinkedList:
+    """
+    Initialize SinglyLinkedList object
+    """
     def __init__(self):
         self.__head = None
 
+    """
+    Insert Node object in sorted order
+    """
     def sorted_insert(self, value):
         newNode = Node(value, None)
         if self.__head is None:
@@ -58,6 +81,9 @@ class SinglyLinkedList:
                 tmp = tmp.next_node
             tmp.next_node = newNode
 
+    """
+    Print list.
+    """
     def __str__(self):
         if self.__head is not None:
             tmp = self.__head
