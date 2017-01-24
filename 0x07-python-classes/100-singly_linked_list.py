@@ -28,6 +28,7 @@ class Node:
         else:
             raise TypeError("next must be a Node object")
 
+
 class SinglyLinkedList:
     def __init__(self):
         self.__head = None
@@ -58,7 +59,7 @@ class SinglyLinkedList:
             tmp.next_node = newNode
 
     def __str__(self):
-        if not self.__head is None:
+        if self.__head is not None:
             tmp = self.__head
             out = "" + str(tmp.data) + "\n"
             while tmp.next_node:
