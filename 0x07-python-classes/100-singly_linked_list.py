@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 class Node:
-    def __init__(self, data, next=None):
+    def __init__(self, data, next_node=None):
         self.data = data
-        self.next = next
+        self.next_node = next_node
 
     @property
     def data(self):
@@ -16,15 +16,15 @@ class Node:
             self.__data = value
 
     @property
-    def next(self):
-        return self.__next
+    def next_node(self):
+        return self.__next_node
 
-    @next.setter
-    def next(self, value):
+    @next_node.setter
+    def next_node(self, value):
         if value is None:
-            self.__next = value
+            self.__next_node = value
         elif isinstance(value, Node):
-            self.__next = value
+            self.__next_node = value
         else:
             raise TypeError("next must be a Node object")
 
@@ -36,34 +36,34 @@ class SinglyLinkedList:
         newNode = Node(value, None)
         if self.__head is None:
             self.__head = newNode
-        elif self.__head.next is None:
+        elif self.__head.next_node is None:
             if self.__head.data < value:
-                self.__head.next = newNode
+                self.__head.next_node = newNode
             elif self.__head.data >= value:
-                newNode.next = self.__head
+                newNode.next_node = self.__head
                 self.__head = new
         else:
             tmp = self.__head
-            while tmp.next:
+            while tmp.next_node:
                 if tmp.data >= value:
-                    newNode.next = tmp
+                    newNode.next_node = tmp
                     tmp = newNode
                     self.__head = tmp
                     return
-                elif tmp.data < value and tmp.next.data >= value:
-                    newNode.next = tmp.next
-                    tmp.next = newNode
+                elif tmp.data < value and tmp.next_node.data >= value:
+                    newNode.next_node = tmp.next_node
+                    tmp.next_node = newNode
                     return
-                tmp = tmp.next
-            tmp.next = newNode
+                tmp = tmp.next_node
+            tmp.next_node = newNode
 
     def __str__(self):
         if not self.__head is None:
             tmp = self.__head
             out = "" + str(tmp.data) + "\n"
-            while tmp.next:
-                tmp = tmp.next
-                if tmp.next:
+            while tmp.next_node:
+                tmp = tmp.next_node
+                if tmp.next_node:
                     out += str(tmp.data) + "\n"
                 else:
                     out += str(tmp.data)
