@@ -81,7 +81,7 @@ class Rectangle:
             return out
         for i in range(self.height):
             for j in range(self.width):
-                out += str(Rectangle.print_symbol)
+                out += str(self.print_symbol)
             if i < self.height - 1:
                 out += "\n"
         return out
@@ -90,7 +90,7 @@ class Rectangle:
     Return string representation of Rectangle object.
     """
     def __repr__(self):
-        return "Rectangle(" + str(self.width) + ", " + str(self.height) + ")\n"
+        return "Rectangle(" + str(self.width) + ", " + str(self.height) + ")"
 
     """
     Print the message "Bye rectangle..." when a Rectangle object is deleted.
