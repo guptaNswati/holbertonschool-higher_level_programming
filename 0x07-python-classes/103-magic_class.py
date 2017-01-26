@@ -7,10 +7,9 @@ This is a Magic Class that reverses a given Class's bytecode
 class MagicClass:
     def __init__(self, radius):
         self.__radius = 0
-        if not (type(radius) is int or type(radius) is float):
+        if not (type(radius) is int and type(radius) is float):
             raise TypeError("radius must be a number")
-        else:
-            self.__radius = radius
+        self.__radius = radius
 
     def area(self):
         return (self.__radius ** 2) * math.pi
