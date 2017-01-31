@@ -65,11 +65,11 @@ The second argument should be a strictly positive integer
 
 Test for type
      >>> def test_i(tests=[]):
-     ... for test in tests:
+     ...     for test in tests:
      ...       	  try:
      ...		bg.integer_validator("name", test)
-     ...       		except Exception as e:
-     ...      		       		 print("[{}] {} for type {}".format(e.__class__.__name__, e, type(test)))
+     ...      	  except Exception as e:
+     ...     	        print("[{}] {} for type {}".format(e.__class__.__name__, e, type(test)))
      ...
 
      >>> tests = [True, 1.24, -76.87, set(), [1, 2], "a string", {"a":1}, ("11", 3), test_i, bg, BaseGeometry, None]
