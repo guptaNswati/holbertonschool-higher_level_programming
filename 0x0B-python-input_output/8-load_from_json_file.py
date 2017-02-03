@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 import json
-from io import StringIO
+"""
+Create an Object from a "JSON file".
+"""
 
-def load_from_json_file(filemame):
-    with open(filemame, 'r') as f:
-        json.load(StringIO(f.read()))
+
+def load_from_json_file(filename):
+    with open(filename, 'r') as f:
+        return json.loads(f.read())

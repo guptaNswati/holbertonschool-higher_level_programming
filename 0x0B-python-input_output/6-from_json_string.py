@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 import json
-from io import StringIO
+"""
+Return an object (Python data structure) represented by a JSON string.
+"""
 
 
 def from_json_string(my_str):
-    return json.load(StringIO(my_str))
+    return json.loads(my_str)
