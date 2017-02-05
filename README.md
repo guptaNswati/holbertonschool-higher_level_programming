@@ -3,8 +3,7 @@ This repository contains projects for training in the high-level track at [Holbe
 ## Styling and Specifications
 All programs were written from Bash, using emacs.
 ### Compilation
-All programs must run with pyton 3.4.3 on Ubuntu 14.04, and pass all style checks with [PEP8](https://www.python.org/dev/peps/pep-0008/)
-All scripts should have execution permissions:
+All programs must run with pyton 3.4.3 on Ubuntu 14.04, and pass all style checks with [PEP8](https://www.python.org/dev/peps/pep-0008/). All scripts should have execution permissions:
 ```
 chmod u+x file
 ```
