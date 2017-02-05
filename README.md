@@ -1,5 +1,5 @@
-# High Level Python Programming Exercises
-This repository conatins exercises to learn Python 3.4.3 at [Holberton School](https://holbertonschool.com). These exercises are designed to dive into Python from a beginners level to the advanced level.
+# High Level Python Programming
+This repository contains exercises to learn Python 3.4.3 at [Holberton School](https://holbertonschool.com). These exercises are designed to dive into Python from a beginners level to the advanced level.
 ## Styling and Specifications
 All programs were written from Bash, using emacs.
 ### Compilation
@@ -16,6 +16,9 @@ python3 file.py
 To check the styling:
 ```
 pep8 file.py
+```
+### Directories
+Each directory is named after a concept and contains ordered exercises from mandatory to advance level, and a README.md with a short description of its files.
 ## Author
 **Swati Gupta**
 I have coded all of these exercises during my software engineering tarining at [Holberton School](https://holbertonschool.com) and are part of high-level-track curriculum.
