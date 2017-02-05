@@ -37,11 +37,11 @@ This class only defines one extra function compare to list: print_sorted
 It is assumed all the elements of the list will be integers.
 
    >>> def test_i(tests=[]):
-   ... 	   for test in tests:
-   ...       	try:
-   ...			test.print_sorted()
+   ...	    for test in tests:
+   ...	        try:
+   ...		    test.print_sorted()
    ...       	except Exception as e:
-   ...    	        print("[{}] {}".format(e.__class__.__name__, e))
+   ...    	    print("[{}] {}".format(e.__class__.__name__, e))
    ...
 
    >>> tests = [MyList([1, "a"]), MyList(["a", "b", "c"]), None, MyList([[1], [2]]), MyList([1, -1, 3.4])]
