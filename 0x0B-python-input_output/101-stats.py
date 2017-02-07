@@ -4,7 +4,10 @@ Write a script that reads stdin line by line and computes metrics.
 """
 
 import sys
-from collections import OrderedDict
+
+def sort_dict(dic):
+    for k in sorted(dic.keys()):
+        print("{}: {:d}".format(k, dic[k]))
 try:
     size = 0
     count = 0
@@ -15,8 +18,8 @@ try:
         count += 1
         if count % 10 == 0:
             print("File size: {:d}".format(size))
-            print(OrderedDict(sorted(code.items())))
+            sort_dict(code)
 except KeyboardInterrupt as e:
         print("File size: {:d}".format(size))
-        print(OrderedDict(sorted(code.items())))
+        sort_dict(code)
         print(e)

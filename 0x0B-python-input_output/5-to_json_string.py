@@ -1,8 +1,8 @@
-#!/usr/bin/pyhton3
-import json
+#!/usr/bin/python3
 """
 Return the JSON representation of an object (string).
 """
+import json
 
 
 def to_json_string(my_obj):
