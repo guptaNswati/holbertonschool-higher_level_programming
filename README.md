@@ -21,3 +21,4 @@ Each directory is named after a concept and contains ordered exercises from mand
 ## Author
 **Swati Gupta**
 I have coded all of these exercises during my software engineering training at [Holberton School](https://holbertonschool.com) and these are part of high-level-track curriculum.
+* [Linkedin](https://www.linkedin.com/in/swatig15)
