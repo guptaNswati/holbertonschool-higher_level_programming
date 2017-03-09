@@ -24,6 +24,6 @@ if __name__ == "__main__":
             for state in states:
                 print("{}".format(state[0]))
         else:
-            print("Not Found")
+            print("Not found")
         session.close()
         engine.dispose()
