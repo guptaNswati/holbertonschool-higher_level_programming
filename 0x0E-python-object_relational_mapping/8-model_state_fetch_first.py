@@ -2,6 +2,8 @@
 """
 this script lists all states from the database hbtn_0e_6_usa using SQLAlchemy
 """
+
+
 import sys
 from sqlalchemy import create_engine
 if __name__ == "__main__":
@@ -12,8 +14,11 @@ if __name__ == "__main__":
             sys.argv[1], sys.argv[2], sys.argv[3]))
         conn = engine.connect()
         states = conn.execute("SELECT * FROM states")
-        for state in states:
-            print("{:d}: {:s}".format(state[0], state[1]))
-            break
+        if states:
+            for state in states:
+                print("{:d}: {:s}".format(state[0], state[1]))
+                break
+        else:
+            print("Nothing")
         conn.close()
         engine.dispose()
