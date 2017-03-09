@@ -18,8 +18,8 @@ if __name__ == "__main__":
         Base.metadata.create_all(engine)
         Session = sessionmaker(bind=engine)
         session = Session()
-        for state in session.query(State.id, State.name).filter(State.name.ilike(
-                '%a%')).order_by(State.id):
+        for state in session.query(State.id, State.name).filter(
+                State.name.ilike('%a%')).order_by(State.id):
             print("{:d}: {:s}".format(state[0], state[1]))
         session.close()
         engine.dispose()

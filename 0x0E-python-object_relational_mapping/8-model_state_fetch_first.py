@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-# this script lists all states from the database hbtn_0e_6_usa using SQLAlchemy
+"""
+this script lists all states from the database hbtn_0e_6_usa using SQLAlchemy
+"""
 import sys
 from sqlalchemy import create_engine
 if __name__ == "__main__":
