@@ -1,9 +1,5 @@
 #!/usr/bin/python3
-"""
-this script lists all states from the database hbtn_0e_6_usa using SQLAlchemy
-"""
-
-
+# this script lists all states from the database hbtn_0e_6_usa using SQLAlchemy
 import sys
 from sqlalchemy import create_engine
 if __name__ == "__main__":
@@ -16,5 +12,6 @@ if __name__ == "__main__":
         states = conn.execute("SELECT * FROM states")
         for state in states:
             print("{:d}: {:s}".format(state[0], state[1]))
+            break
         conn.close()
         engine.dispose()
