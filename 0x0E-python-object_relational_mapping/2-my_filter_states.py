@@ -21,7 +21,5 @@ if __name__ == "__main__":
         if states:
             for state in states:
                 print(state)
-        else:
-            print("Not found")
         cur.close()
         db.close()
