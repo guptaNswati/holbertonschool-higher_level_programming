@@ -10,7 +10,8 @@ import base64
 if __name__ == "__main__":
     bearer_token = "%s:%s" % (sys.argv[1], sys.argv[2])
     token_64 = "Basic %s" % base64.b64encode(bearer_token.encode())
-    header = {"Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+    header = {"Content-Type":
+              "application/x-www-form-urlencoded;charset=UTF-8",
               "Authorization": token_64}
     data = {"grant_type": "client_credentials"}
     req = requests.post('https://api.twitter.com/oauth2/token', headers=header,
@@ -20,7 +21,7 @@ if __name__ == "__main__":
     headers = {"Authorization": "Bearer %s" % access}
     query = {'q': sys.argv[3], 'count': 5}
     search_req = requests.get(url, params=query, headers=headers)
-    search_req = search_req.json()['statuses']
+    search_req = search_req.json().get('statuses')
     for each in search_req:
         print("[{}] {} by {}".format(
             each['id'], each['text'], each['user']['name']))
