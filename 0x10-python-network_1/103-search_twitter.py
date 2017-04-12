@@ -9,10 +9,13 @@ import base64
 
 if __name__ == "__main__":
     bearer_token = "%s:%s" % (sys.argv[1], sys.argv[2])
-    token_64 = "Basic %s" % base64.b64encode(bearer_token.encode())
-    header = {"Content-Type":
-              "application/x-www-form-urlencoded;charset=UTF-8",
-              "Authorization": token_64}
+    token_64 = base64.b64encode(bytes(
+        bearer_token.encode("utf-8")))
+    header = {
+        "Content-Type":
+        "application/x-www-form-urlencoded;charset=UTF-8",
+        "Authorization": "Basic " + str(token_64, encoding='utf-8')
+    }
     data = {"grant_type": "client_credentials"}
     req = requests.post('https://api.twitter.com/oauth2/token', headers=header,
                         data=data)
