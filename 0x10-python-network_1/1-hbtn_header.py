@@ -9,4 +9,4 @@ import sys
 
 if __name__ == "__main__":
     page, header = urllib.request.urlretrieve(sys.argv[1])
-    print(header['X-Request-Id'])
+    print(header.get('X-Request-Id'))
