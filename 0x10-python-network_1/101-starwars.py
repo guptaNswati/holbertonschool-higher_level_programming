@@ -9,14 +9,18 @@ import sys
 if __name__ == "__main__":
     count = 0
     names = []
-    req = requests.get('http://swapi.co/api/people/?search={:s}'.format(
-        sys.argv[1]))
+    url = 'http://swapi.co/api/people/'
+    query = {'search': sys.argv[1]}
+    while True:
     # check response
-    found = req.json()["results"]
-    if found:
-        for each in found:
+        found = requests.get(url, params=query).json()
+        for each in found.get('results'):
             count += 1
-            names.append(each['name'])
+            names.append(each.get('name'))
+        if found.get('next') is not None:
+            url = found.get('next')
+        else:
+            break
     print("Number of result: {:d}".format(count))
     for name in names:
         print(name)

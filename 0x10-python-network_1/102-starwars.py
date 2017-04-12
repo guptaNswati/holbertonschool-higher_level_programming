@@ -10,22 +10,23 @@ import sys
 if __name__ == "__main__":
     count = 0
     names = {}
-    req = requests.get('http://swapi.co/api/people/?search={:s}'.format(
-        sys.argv[1]))
-    # check response
-    found = req.json()["results"]
-    if found:
-        for each in found:
-            movies = each['films']
-            if movies:
-                films = []
-                for movie in movies:
-                    films.append(requests.get(movie).json()['title'])
+    url = 'http://swapi.co/api/people/'
+    query = {'search': sys.argv[1]}
+    while True:
+        req = requests.get(url, params=query).json()
+        for each in req.get('results'):
+            films = []
+            for movie in each.get('films'):
+                films.append(requests.get(movie).json().get('title'))
             count += 1
-            names[each['name']] = films
+            names[each.get('name')] = films
+        if req.get('next') is not None:
+            url = req.get('next')
+        else:
+            break
     print("Number of result: {:d}".format(count))
     for name in names:
         print(name)
         movies = names[name]
         for movie in movies:
-            print("    ", movie)
+            print("\t", movie)
