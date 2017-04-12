@@ -8,5 +8,6 @@ import sys
 
 
 if __name__ == "__main__":
-    page, header = urllib.request.urlretrieve(sys.argv[1])
-    print(header.get('X-Request-Id'))
+    req = urllib.request.Request(sys.argv[1])
+    with urllib.request.urlopen(req) as response:
+        print(response.getheader('X-Request-Id'))
