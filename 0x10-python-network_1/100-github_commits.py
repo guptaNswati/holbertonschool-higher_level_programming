@@ -13,4 +13,4 @@ if __name__ == "__main__":
     req = req.json()
     for i in range(0, 10):
         print("{}: {}".format(
-            req[i]['sha'], req[i]['commit']['author']['name']))
+            req[i].get('sha'), req[i].get('commit').get('author').get('name')))
