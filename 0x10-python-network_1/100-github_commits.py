@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-This module lists 10 commits (from the most recent to oldest) of the repository
-“rails” by the user “rails” from github, holberton backend interview question
+This module lists 10 commits of given repositories given users commits,
+a holberton backend interview question
 """
 import requests
 import sys

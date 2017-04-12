@@ -29,4 +29,4 @@ if __name__ == "__main__":
         print(name)
         movies = names[name]
         for movie in movies:
-            print("\t", movie)
+            print("\t{}".format(movie))
