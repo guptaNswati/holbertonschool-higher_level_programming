@@ -12,7 +12,6 @@ if __name__ == "__main__":
     url = 'http://swapi.co/api/people/'
     query = {'search': sys.argv[1]}
     while True:
-    # check response
         found = requests.get(url, params=query).json()
         for each in found.get('results'):
             count += 1

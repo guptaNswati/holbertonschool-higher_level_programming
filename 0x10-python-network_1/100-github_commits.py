@@ -9,8 +9,7 @@ import sys
 
 if __name__ == "__main__":
     req = requests.get('https://api.github.com/repos/{}/{}/commits'.format(
-        sys.argv[2], sys.argv[1]))
-    req = req.json()
+        sys.argv[2], sys.argv[1])).json()
     if req:
         for i, commit in enumerate(req):
             if i < 10:
