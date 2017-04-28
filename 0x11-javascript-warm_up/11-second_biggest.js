@@ -7,6 +7,8 @@ function secondMax (arr) {
     if (maxSoFar < arr[i]) {
       currentMax = maxSoFar;
       maxSoFar = arr[i];
+    } else if (currentMax < arr[i]) {
+      currentMax = arr[i];
     }
   }
   console.log(currentMax);
