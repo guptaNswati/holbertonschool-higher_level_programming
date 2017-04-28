@@ -1,6 +1,14 @@
 #!/usr/bin/node
 
 function secondMax (arr) {
+  if (arr.length === 2) {
+    if (arr[0] > arr[1]) {
+      console.log(arr[1]);
+    } else {
+      console.log(arr[0]);
+    }
+    return;
+  }
   let maxSoFar = Number(arr[0]);
   let currentMax = maxSoFar;
   for (let i = 1; i < arr.length; ++i) {
