@@ -9,5 +9,5 @@ if (process.argv[2] !== undefined) {
     console.log(allData['films'].length);
   });
 } else {
-  console.log(error);
+  console.log('Error: Pass the url');
 }
