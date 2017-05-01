@@ -8,4 +8,6 @@ if (process.argv[2] !== undefined) {
     let allData = JSON.parse(body);
     console.log(allData['films'].length);
   });
+} else {
+  console.log(error);
 }
