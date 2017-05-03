@@ -1,0 +1,916 @@
+     * Directory: 0x13-javascript-web_jquery
+
+
+0. Tags count #0 
+
+   How many HTML tags are present in the following HTML code? The answer must be
+ one line with the
+   number.
+
+
+1. Tags count #1 
+
+   How many HTML tags are present in the following HTML code? The answer must be
+ one line with the
+   number.
+
+2. Tags count #2 
+
+   How many HTML tags are present in the following HTML code? The answer must be
+ one line with the
+   number.
+
+
+3. Selector #0
+     * File: 3-selector.txt
+
+4. Selector #1 
+
+   In the following code snippet, will using a selector called ('header') access
+ the HTML tag
+   <HEADER>: (using document.querySelector or $(...))
+
+   Answer with Yes or No.
+<HTML lang="en">
+  <HEAD>
+    <TITLE>Holberton School</TITLE>
+    <LINK rel = "stylesheet" href = "styles/global.css" />
+  </HEAD>
+  <BODY>
+    <HEADER>
+      First HTML page
+    </HEADER>
+    <SECTION>
+      <IMG src="logo.jpg" />
+      <BR />
+      <UL>
+        <LI>Home</LI>
+        <LI>Admission <SPAN class="btn">apply</SPAN></LI>
+        <LI>Login</LI>
+      </UL>
+    </SECTION>
+    <FOOTER>
+      Holberton School - 2017
+    </FOOTER>
+  </BODY>
+</HTML>
+
+     * File: 4-selector.txt
+
+
+Correction of "Selector #1"
+
+
+
+
+
+5. Selector #2 
+
+   In the following code snippet, will the ('body header') selector access the H
+TML tag <HEADER>:
+   (using document.querySelector or $(...))
+
+   Answer with Yes or No.
+<HTML lang="en">
+  <HEAD>
+    <TITLE>Holberton School</TITLE>
+    <LINK rel = "stylesheet" href = "styles/global.css" />
+  </HEAD>
+  <BODY>
+    <HEADER>
+      First HTML page
+    </HEADER>
+    <SECTION>
+      <IMG src="logo.jpg" />
+      <BR />
+      <UL>
+        <LI>Home</LI>
+        <LI>Admission <SPAN class="btn">apply</SPAN></LI>
+        <LI>Login</LI>
+      </UL>
+    </SECTION>
+    <FOOTER>
+      Holberton School - 2017
+    </FOOTER>
+  </BODY>
+</HTML>
+
+     * File: 5-selector.txt
+
+
+Correction of "Selector #2"
+
+
+
+
+
+6. Selector #3 
+
+   In the following code snippet, will using a selector called ('HeAdER') access
+ the HTML tag
+   <HEADER>: (using document.querySelector or $(...))?
+
+   Answer with Yes or No.
+<HTML lang="en">
+  <HEAD>
+    <TITLE>Holberton School</TITLE>
+    <LINK rel = "stylesheet" href = "styles/global.css" />
+  </HEAD>
+  <BODY>
+    <HEADER>
+      First HTML page
+    </HEADER>
+    <SECTION>
+      <IMG src="logo.jpg" />
+      <BR />
+      <UL>
+        <LI>Home</LI>
+        <LI>Admission <SPAN class="btn">apply</SPAN></LI>
+        <LI>Login</LI>
+      </UL>
+    </SECTION>
+    <FOOTER>
+      Holberton School - 2017
+    </FOOTER>
+  </BODY>
+</HTML>
+
+     * File: 6-selector.txt
+
+
+Correction of "Selector #3"
+
+
+
+
+
+7. Selector #4 
+
+   In the following code snippet, will using a selector called ('#header') acces
+s the HTML tag
+   <HEADER>: (using document.querySelector or $(...))?
+
+   Answer with Yes or No.
+<HTML lang="en">
+  <HEAD>
+    <TITLE>Holberton School</TITLE>
+    <LINK rel = "stylesheet" href = "styles/global.css" />
+  </HEAD>
+  <BODY>
+    <HEADER>
+      First HTML page
+    </HEADER>
+    <SECTION>
+      <IMG src="logo.jpg" />
+      <BR />
+      <UL>
+        <LI>Home</LI>
+        <LI>Admission <SPAN class="btn">apply</SPAN></LI>
+        <LI>Login</LI>
+      </UL>
+    </SECTION>
+    <FOOTER>
+      Holberton School - 2017
+    </FOOTER>
+  </BODY>
+</HTML>
+
+     * File: 7-selector.txt
+
+
+Correction of "Selector #4"
+
+
+
+
+
+8. Selector #5 
+
+   In the following code snippet, will using a selector called ('.my_header') ac
+cess the HTML tag
+   <HEADER>: (using document.querySelector or $(...))
+
+   Answer with Yes or No.
+<HTML lang="en">
+  <HEAD>
+    <TITLE>Holberton School</TITLE>
+    <LINK rel = "stylesheet" href = "styles/global.css" />
+  </HEAD>
+  <BODY>
+    <HEADER class="my_header">
+      First HTML page
+    </HEADER>
+    <SECTION>
+      <IMG src="logo.jpg" />
+      <BR />
+      <UL>
+        <LI>Home</LI>
+        <LI>Admission <SPAN class="btn">apply</SPAN></LI>
+        <LI>Login</LI>
+      </UL>
+    </SECTION>
+    <FOOTER>
+      Holberton School - 2017
+    </FOOTER>
+  </BODY>
+</HTML>
+
+     * File: 8-selector.txt
+
+
+Correction of "Selector #5"
+
+
+
+
+
+9. Selector #6 
+
+   In the following code snippet, will using a selector called ('header.my_heade
+r') access the HTML
+   tag <HEADER>: (using document.querySelector or $(...))
+
+   Answer with Yes or No.
+<HTML lang="en">
+  <HEAD>
+    <TITLE>Holberton School</TITLE>
+    <LINK rel = "stylesheet" href = "styles/global.css" />
+  </HEAD>
+  <BODY>
+    <HEADER class="my_header">
+      First HTML page
+    </HEADER>
+    <SECTION>
+      <IMG src="logo.jpg" />
+      <BR />
+      <UL>
+        <LI>Home</LI>
+        <LI>Admission <SPAN class="btn">apply</SPAN></LI>
+        <LI>Login</LI>
+      </UL>
+    </SECTION>
+    <FOOTER>
+      Holberton School - 2017
+    </FOOTER>
+  </BODY>
+</HTML>
+
+     * File: 9-selector.txt
+
+
+Correction of "Selector #6"
+
+
+
+
+
+10. Selector #7 
+
+   In the following code snippet, will using a select called ('section.my_header
+') access the HTML
+   tag <HEADER>: (using document.querySelector or $(...))
+
+   Answer with Yes or No.
+<HTML lang="en">
+  <HEAD>
+    <TITLE>Holberton School</TITLE>
+    <LINK rel = "stylesheet" href = "styles/global.css" />
+  </HEAD>
+  <BODY>
+    <HEADER class="my_header">
+      First HTML page
+    </HEADER>
+    <SECTION>
+      <IMG src="logo.jpg" />
+      <BR />
+      <UL>
+        <LI>Home</LI>
+        <LI>Admission <SPAN class="btn">apply</SPAN></LI>
+        <LI>Login</LI>
+      </UL>
+    </SECTION>
+    <FOOTER>
+      Holberton School - 2017
+    </FOOTER>
+  </BODY>
+</HTML>
+
+     * File: 10-selector.txt
+
+
+Correction of "Selector #7"
+
+
+
+
+
+11. Selector #8 
+
+   In the following code snippet, will using a selector called ('#my_header') ac
+cess the HTML tag
+   <HEADER>: (using document.querySelector or $(...))
+
+   Answer with Yes or No.
+<HTML lang="en">
+  <HEAD>
+    <TITLE>Holberton School</TITLE>
+    <LINK rel = "stylesheet" href = "styles/global.css" />
+  </HEAD>
+  <BODY>
+    <HEADER class="my_header">
+      First HTML page
+    </HEADER>
+    <SECTION>
+      <IMG src="logo.jpg" />
+      <BR />
+      <UL>
+        <LI>Home</LI>
+        <LI>Admission <SPAN class="btn">apply</SPAN></LI>
+        <LI>Login</LI>
+      </UL>
+    </SECTION>
+    <FOOTER>
+      Holberton School - 2017
+    </FOOTER>
+  </BODY>
+</HTML>
+
+     * File: 11-selector.txt
+
+
+Correction of "Selector #8"
+
+
+
+
+
+12. Selector #9 
+
+   In the following code snippet, will using a selector called ('#my_header') ac
+cess the HTML tag
+   <HEADER>: (using document.querySelector or $(...))
+
+   Answer with Yes or No.
+<HTML lang="en">
+  <HEAD>
+    <TITLE>Holberton School</TITLE>
+    <LINK rel = "stylesheet" href = "styles/global.css" />
+  </HEAD>
+  <BODY>
+    <HEADER id="my_header">
+      First HTML page
+    </HEADER>
+    <SECTION>
+      <IMG src="logo.jpg" />
+      <BR />
+      <UL>
+        <LI>Home</LI>
+        <LI>Admission <SPAN class="btn">apply</SPAN></LI>
+        <LI>Login</LI>
+      </UL>
+    </SECTION>
+    <FOOTER>
+      Holberton School - 2017
+    </FOOTER>
+  </BODY>
+</HTML>
+
+     * File: 12-selector.txt
+
+
+Correction of "Selector #9"
+
+
+
+
+
+13. Selector #10 
+
+   In the following code snippet, will using a selector called ('#my_header') ac
+cess the HTML tag
+   <HEADER>: (using document.querySelector or $(...))
+
+   Answer with Yes or No.
+<HTML lang="en">
+  <HEAD>
+    <TITLE>Holberton School</TITLE>
+    <LINK rel = "stylesheet" href = "styles/global.css" />
+  </HEAD>
+  <BODY>
+    <HEADER class="my_header">
+      First HTML page
+    </HEADER>
+    <SECTION>
+      <IMG src="logo.jpg" />
+      <BR />
+      <UL id="my_header">
+        <LI>Home</LI>
+        <LI>Admission <SPAN class="btn">apply</SPAN></LI>
+        <LI>Login</LI>
+      </UL>
+    </SECTION>
+    <FOOTER>
+      Holberton School - 2017
+    </FOOTER>
+  </BODY>
+</HTML>
+
+     * File: 13-selector.txt
+
+
+Correction of "Selector #10"
+
+
+
+
+
+14. No jQuery 
+
+   Write a Javascript script that updates the text color of the HTML tag HEADER
+to red (#FF0000):
+     * You must use document.querySelector to select the HTML tag
+     * You can't use the jQuery API
+
+<HTML lang="en">
+  <HEAD>
+    <TITLE>Holberton School</TITLE>
+  </HEAD>
+  <BODY>
+    <HEADER>
+      First HTML page
+    </HEADER>
+    <FOOTER>
+      Holberton School - 2017
+    </FOOTER>
+    <SCRIPT type="text/javascript" src="14-script.js"></SCRIPT>
+  </BODY>
+</HTML>
+
+     * File: 14-script.js
+
+
+
+
+15. With jQuery 
+
+   Write a Javascript script that updates the text color of the HTML tag HEADER
+to red (#FF0000):
+     * You can't use document.querySelector to select the HTML tag
+     * You must use the jQuery API
+
+<HTML lang="en">
+  <HEAD>
+    <TITLE>Holberton School</TITLE>
+    <SCRIPT src="https://code.jquery.com/jquery-3.2.1.min.js"></SCRIPT>
+  </HEAD>
+  <BODY>
+    <HEADER>
+      First HTML page
+    </HEADER>
+    <FOOTER>
+      Holberton School - 2017
+    </FOOTER>
+    <SCRIPT type="text/javascript" src="15-script.js"></SCRIPT>
+  </BODY>
+</HTML>
+
+     * File: 15-script.js
+
+
+
+
+16. Click and turn red 
+
+   Write a Javascript script that updates the text color of the HTML tag HEADER
+to red (#FF0000)
+   when the user clicks on the tag DIV#red_header:
+     * You can't use document.querySelector to select the HTML tag
+     * You must use the jQuery API
+
+<HTML lang="en">
+  <HEAD>
+    <TITLE>Holberton School</TITLE>
+    <SCRIPT src="https://code.jquery.com/jquery-3.2.1.min.js"></SCRIPT>
+  </HEAD>
+  <BODY>
+    <HEADER>
+      First HTML page
+    </HEADER>
+    <DIV id="red_header">Red header</DIV>
+    <FOOTER>
+      Holberton School - 2017
+    </FOOTER>
+    <SCRIPT type="text/javascript" src="16-script.js"></SCRIPT>
+  </BODY>
+</HTML>
+
+     * File: 16-script.js
+
+
+
+
+17. Add `.red` class 
+
+   Write a Javascript script that adds the class red to the HTML tag HEADER to r
+ed (#FF0000) when
+   the user clicks on the tag DIV#red_header:
+     * You can't use document.querySelector to select the HTML tag
+     * You must use the jQuery API
+
+<HTML lang="en">
+  <HEAD>
+    <TITLE>Holberton School</TITLE>
+    <SCRIPT src="https://code.jquery.com/jquery-3.2.1.min.js"></SCRIPT>
+    <STYLE>
+      .red {
+        color: #FF0000;
+      }
+    </STYLE>
+  </HEAD>
+  <BODY>
+    <HEADER>
+      First HTML page
+    </HEADER>
+    <DIV id="red_header">Red header</DIV>
+    <FOOTER>
+      Holberton School - 2017
+    </FOOTER>
+    <SCRIPT type="text/javascript" src="17-script.js"></SCRIPT>
+  </BODY>
+</HTML>
+
+     * File: 17-script.js
+
+
+
+
+18. Toggle classes 
+
+   Write a Javascript script that toggles the class of the HTML tag HEADER to re
+d (#FF0000) when the
+   user clicks on the tag DIV#toggle_header:
+     * The HEADER tag must always have one class: red or green, never both in th
+e same time, never
+       empty.
+     * If the current class is red, when the user click on DIV#toggle_header, th
+e class must be
+       updated to green ; and the reverse.
+     * You can't use document.querySelector to select the HTML tag
+     * You must use the jQuery API
+
+<HTML lang="en">
+  <HEAD>
+    <TITLE>Holberton School</TITLE>
+    <SCRIPT src="https://code.jquery.com/jquery-3.2.1.min.js"></SCRIPT>
+    <STYLE>
+      .red {
+        color: #FF0000;
+      }
+      .green {
+        color: #00FF00;
+      }
+    </STYLE>
+  </HEAD>
+  <BODY>
+    <HEADER>
+      First HTML page
+    </HEADER>
+    <DIV id="toggle_header">Toggle header</DIV>
+    <FOOTER>
+      Holberton School - 2017
+    </FOOTER>
+    <SCRIPT type="text/javascript" src="18-script.js"></SCRIPT>
+  </BODY>
+</HTML>
+
+     * File: 18-script.js
+
+
+
+
+19. List of elements 
+
+   Write a Javascript script that adds a LI element to a list when the user clic
+ks on the tag
+   DIV#add_item:
+     * The new element must be: <LI>Item</LI>
+     * The new element must be added to UL.my_list
+     * You can't use document.querySelector to select the HTML tag
+     * You must use the jQuery API
+
+<HTML lang="en">
+  <HEAD>
+    <TITLE>Holberton School</TITLE>
+    <SCRIPT src="https://code.jquery.com/jquery-3.2.1.min.js"></SCRIPT>
+  </HEAD>
+  <BODY>
+    <HEADER>
+      First HTML page
+    </HEADER>
+    <BR />
+    <DIV id="add_item">Add item</DIV>
+    <BR />
+    <UL class="my_list">
+      <LI>Item</LI>
+    </UL>
+    <FOOTER>
+      Holberton School - 2017
+    </FOOTER>
+    <SCRIPT type="text/javascript" src="19-script.js"></SCRIPT>
+  </BODY>
+</HTML>
+
+     * File: 19-script.js
+
+
+
+
+20. Change the text 
+
+   Write a Javascript script that updates the text of the HTML tag HEADER to "Ne
+w Header!!!" when
+   the user clicks on DIV#update_header
+     * You can't use document.querySelector to select the HTML tag
+     * You must use the jQuery API
+
+<HTML lang="en">
+  <HEAD>
+    <TITLE>Holberton School</TITLE>
+    <SCRIPT src="https://code.jquery.com/jquery-3.2.1.min.js"></SCRIPT>
+  </HEAD>
+  <BODY>
+    <HEADER>
+      First HTML page
+    </HEADER>
+    <BR />
+    <DIV id="update_header">Update the header</DIV>
+    <BR />
+    <FOOTER>
+      Holberton School - 2017
+    </FOOTER>
+    <SCRIPT type="text/javascript" src="20-script.js"></SCRIPT>
+  </BODY>
+</HTML>
+
+     * File: 20-script.js
+
+
+
+
+21. Star wars character 
+
+   Write a Javascript script that fetches and replaces the name of this URL:
+   http://swapi.co/api/people/5/?format=json
+     * The name must be displayed in the HTML tag DIV#character
+     * You can't use document.querySelector to select the HTML tag
+     * You must use the jQuery API
+
+<HTML lang="en">
+  <HEAD>
+    <TITLE>Holberton School</TITLE>
+    <SCRIPT src="https://code.jquery.com/jquery-3.2.1.min.js"></SCRIPT>
+  </HEAD>
+  <BODY>
+    <HEADER>
+      Star Wars character
+    </HEADER>
+    <BR />
+    <DIV id="character"></DIV>
+    <BR />
+    <FOOTER>
+      Holberton School - 2017
+    </FOOTER>
+    <SCRIPT type="text/javascript" src="21-script.js"></SCRIPT>
+  </BODY>
+</HTML>
+
+     * File: 21-script.js
+
+
+
+
+22. Star Wars movies 
+
+   Write a Javascript script that fetches and lists all movies title by using th
+is URL:
+   http://swapi.co/api/films?format=json
+     * All movie titles must be list in the HTML tag UL#list_movies
+     * You can't use document.querySelector to select the HTML tag
+     * You must use the jQuery API
+
+<HTML lang="en">
+  <HEAD>
+    <TITLE>Holberton School</TITLE>
+    <SCRIPT src="https://code.jquery.com/jquery-3.2.1.min.js"></SCRIPT>
+  </HEAD>
+  <BODY>
+    <HEADER>
+      Star Wars movies
+    </HEADER>
+    <BR />
+    <UL id="list_movies">
+    </UL>
+    <BR />
+    <FOOTER>
+      Holberton School - 2017
+    </FOOTER>
+    <SCRIPT type="text/javascript" src="22-script.js"></SCRIPT>
+  </BODY>
+</HTML>
+
+     * File: 22-script.js
+
+
+
+
+23. Wind speed 
+
+   Write a Javascript script that fetches and prints the San Francisco wind spee
+d by using this URL:
+   https://query.yahooapis.com/v1/public/yql?q=select%20wind%20from%20weather.fo
+recast%20where%20woe
+   id%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22San%20Fr
+ancisco%2C%20CA%22)&
+   format=json
+     * The wind speed must be display in the HTML tag DIV#sf_wind_speed
+     * You can't use document.querySelector to select the HTML tag
+     * You must use the jQuery API
+
+<HTML lang="en">
+  <HEAD>
+    <TITLE>Holberton School</TITLE>
+    <SCRIPT src="https://code.jquery.com/jquery-3.2.1.min.js"></SCRIPT>
+    <SCRIPT type="text/javascript" src="23-script.js"></SCRIPT>
+  </HEAD>
+  <BODY>
+    <HEADER>
+      San Francisco - wind speed
+    </HEADER>
+    <BR />
+    <DIV id="sf_wind_speed"></DIV>
+    <BR />
+    <FOOTER>
+      Holberton School - 2017
+    </FOOTER>
+  </BODY>
+</HTML>
+
+     * File: 23-script.js
+
+
+
+
+24. No jQuery - document loaded #
+
+   Write a Javascript script that updates the text color of the HTML tag HEADER
+to red (#FF0000):
+     * You must use document.querySelector to select the HTML tag
+     * You can't use the jQuery API
+     * You script must be work when it imported from the HEAD tag
+
+<HTML lang="en">
+  <HEAD>
+    <TITLE>Holberton School</TITLE>
+    <SCRIPT type="text/javascript" src="100-script.js"></SCRIPT>
+  </HEAD>
+  <BODY>
+    <HEADER>
+      First HTML page
+    </HEADER>
+    <FOOTER>
+      Holberton School - 2017
+    </FOOTER>
+  </BODY>
+</HTML>
+
+     * File: 100-script.js
+
+
+
+
+25. List, add, remove #
+
+   Write a Javascript script that adds, removes and clears LI elements from a li
+st when the user
+   clicks:
+     * The new element must be: <LI>Item</LI>
+     * The new element must be added to UL.my_list
+     * When the user clicks on DIV#add_item: a new element is added to the list
+     * When the user clicks on DIV#remove_item: a last element is removed to the
+ list
+     * When the user clicks on DIV#clear_list: all elements of the list are remo
+ved
+     * You can't use document.querySelector to select the HTML tag
+     * You must use the jQuery API
+     * You script must be work when it imported from the HEAD tag
+
+<HTML lang="en">
+  <HEAD>
+    <TITLE>Holberton School</TITLE>
+    <SCRIPT src="https://code.jquery.com/jquery-3.2.1.min.js"></SCRIPT>
+    <SCRIPT type="text/javascript" src="101-script.js"></SCRIPT>
+  </HEAD>
+  <BODY>
+    <HEADER>
+      First HTML page
+    </HEADER>
+    <BR />
+    <DIV id="add_item">Add item</DIV>
+    <DIV id="remove_item">Remove item</DIV>
+    <DIV id="clear_list">Clear list</DIV>
+    <BR />
+    <UL class="my_list">
+      <LI>Item</LI>
+    </UL>
+    <FOOTER>
+      Holberton School - 2017
+    </FOOTER>
+  </BODY>
+</HTML>
+
+     * File: 101-script.js
+
+
+
+
+26. Search wind speed #
+
+   Write a Javascript script that fetches and prints the wind speed by using thi
+s URL:
+   https://query.yahooapis.com/v1/public/yql?q=select%20wind%20from%20weather.fo
+recast%20where%20woe
+   id%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22:city_na
+me%22)&format=json
+     * The wind speed must be display in the HTML tag DIV#sf_wind_speed
+     * The city name must be the value of the tag INPUT#city_search
+     * The wind speed must be fetch when the user clicks on INPUT#btn_search
+     * You can't use document.querySelector to select the HTML tag
+     * You must use the jQuery API
+     * You script must be work when it imported from the HEAD tag
+
+<HTML lang="en">
+  <HEAD>
+    <TITLE>Holberton School</TITLE>
+    <SCRIPT src="https://code.jquery.com/jquery-3.2.1.min.js"></SCRIPT>
+    <SCRIPT type="text/javascript" src="102-script.js"></SCRIPT>
+  </HEAD>
+  <BODY>
+    <HEADER>
+      Wind speed
+    </HEADER>
+    <BR />
+    <INPUT id="city_search" type="text" placeholder="City"/>
+    <BR />
+    <DIV id="wind_speed"></DIV>
+    <BR />
+    <FOOTER>
+      Holberton School - 2017
+    </FOOTER>
+  </BODY>
+</HTML>
+
+     * File: 102-script.js
+
+
+
+
+27. And press ENTER #
+
+   Write a Javascript script that fetches and prints the wind speed by using thi
+s URL:
+   https://query.yahooapis.com/v1/public/yql?q=select%20wind%20from%20weather.fo
+recast%20where%20woe
+   id%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22:city_na
+me%22)&format=json
+     * The wind speed must be display in the HTML tag DIV#sf_wind_speed
+     * The city name must be the value of the tag INPUT#city_search
+     * The wind speed must be fetch when the user clicks on INPUT#btn_search OR
+press ENTER when the
+       focus is on INPUT#city_search
+     * You can't use document.querySelector to select the HTML tag
+     * You must use the jQuery API
+     * You script must be work when it imported from the HEAD tag
+
+<HTML lang="en">
+  <HEAD>
+    <TITLE>Holberton School</TITLE>
+    <SCRIPT src="https://code.jquery.com/jquery-3.2.1.min.js"></SCRIPT>
+    <SCRIPT type="text/javascript" src="103-script.js"></SCRIPT>
+  </HEAD>
+  <BODY>
+    <HEADER>
+      Wind speed
+    </HEADER>
+    <BR />
+    <INPUT id="city_search" type="text" placeholder="City"/>
+    <BR />
+    <DIV id="wind_speed"></DIV>
+    <BR />
+    <FOOTER>
+      Holberton School - 2017
+    </FOOTER>
+  </BODY>
+</HTML>
+
+     * File: 103-script.js
+
