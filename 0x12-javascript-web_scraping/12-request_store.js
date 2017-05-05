@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
-var fs = require('fs');
-var request = require('request');
+let fs = require('fs');
+let request = require('request');
 request(process.argv[2], 'utf-8', function (err, response, body) {
   if (err) {
     console.log(err);
